@@ -123,10 +123,13 @@ a {
     padding: 10px 20px;
     font-size: 2rem;
 }
-#about .col-left .about-img img {
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
     position: relative;
+    border: 10px solid white;
 }
-#about .col-left .about-img img::after {
+#about .col-left .about-img::after {
     content: '';
     position: absolute;
     left: -33px;
@@ -134,6 +137,7 @@ a {
     height: 98%;
     width: 98%;
     border: 7px solid turquoise;
+    z-index: -1;
 }
 @keyframes text_reveal_box {
     50% {
