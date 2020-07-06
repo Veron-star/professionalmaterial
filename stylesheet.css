@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     font-family: 'Cherry Swash', cursive;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -56,6 +57,7 @@ p {
 #header .header {
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
+    transition: 0.3s ease background-color;
 }
 #header .nav-bar {
     display: flex;
@@ -338,33 +340,30 @@ p {
 }
 #contact .contact {
     flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 100px 0;
+    align-items: center;
+    min-width: 20vh;
+    justify-content: center;
 }
 #contact .contact-items {
     width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 50px;
 }
 #contact .contact-item {
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0px 0px 18px 0 black;
-    transition: 0.3s ease box-shadow;
+    width: 30%;
+    flex-direction: row;
+    
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 black;
 }
-#contact .icon {
-    width: 70px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+#contact .contact-item .icon {
+    width: 100px;
+    height: 100px;
 }
 #contact .contact-info h1 {
     font-size: 2.5rem;
