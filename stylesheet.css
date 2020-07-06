@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap'); /*font-family: 'Cherry Swash', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); 
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html {
     font-size: 10px;
-    font-family: 'Cherry Swash', cursive;
+    font-family: 'roboto slab', serif;
     scroll-behavior: smooth;
 }
 a {
@@ -88,7 +87,7 @@ p {
     left: 0;
 }
 #header .nav-list ul a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     text-decoration: none;
@@ -173,7 +172,7 @@ p {
 #hero {
     background-image: url(img\ veron.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
@@ -197,9 +196,9 @@ p {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 5rem;
     position: relative;
-    color: whitesmoke;
+    color: black;
     animation: text_reveal 0.5s ease forwards;
     animation-delay: 1.5s;
 }
@@ -324,18 +323,19 @@ p {
     flex-basis: 50%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: teal;
 }
 #projects .project-info h1 {
     font-size: 4rem;
+    text-decoration: underline;
     font-weight: 500;
 }
 #projects .project-info h2 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 300;
     margin-top: 10px;
 }
 #contact .contact {
@@ -346,7 +346,7 @@ p {
     justify-content: center;
 }
 #contact .contact-items {
-    width: 400px;
+    width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -354,9 +354,16 @@ p {
     padding: 50px;
 }
 #contact .contact-item {
-    width: 30%;
-    flex-direction: row;
-    
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0px 0px 18px 0 #0000002c);
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 black;
@@ -366,7 +373,7 @@ p {
     height: 100px;
 }
 #contact .contact-info h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -379,18 +386,20 @@ p {
     background-image: linear-gradient(60deg, black 0%, grey 100%);
 }
 #footer .footer {
-    min-height: 200px;
+    min-height: 50px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
 }
 #footer .social-icon {
-    display: flex;
-    margin-bottom: 30px;
+    /* display: flex; */
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 #footer p {
     color: white;
     font-size: 1.3rem;
+    text-align: center;
 }
 @keyframes hamburger_puls {
     0% {
