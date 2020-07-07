@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
 
 * {
     margin: 0;
@@ -87,13 +88,13 @@ p {
     left: 0;
 }
 #header .nav-list ul a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    color: white;
+    letter-spacing: 0.1rem;
+    text-decoration: underline overline black;
+    color: darkgray;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 10px;
     display: block;
 }
 #header .nav-list ul a::after {
@@ -171,10 +172,12 @@ p {
 }
 #hero {
     background-image: url(img\ veron.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain auto;
+    background-repeat: no-repeat;
+    background-position: right;
     position: relative;
     z-index: 1;
+    background-color: black;
 }
 #hero::after {
     content: '';
@@ -197,6 +200,15 @@ p {
     display: block;
     width: fit-content;
     font-size: 5rem;
+    position: relative;
+    color: black;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h2 {
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
     position: relative;
     color: black;
     animation: text_reveal 0.5s ease forwards;
@@ -244,9 +256,10 @@ p {
     background-color: turquoise;
 }
 .brand h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: whitesmoke;
+    font-family: 'Beth Ellen', cursive;
 }
 #about .about {
     flex-direction: column-reverse;
@@ -326,7 +339,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: teal;
+    background-color: rgb(120, 120, 138);
 }
 #projects .project-info h1 {
     font-size: 4rem;
@@ -344,6 +357,7 @@ p {
     align-items: center;
     min-width: 20vh;
     justify-content: center;
+    background-color: rgb(223, 203, 203);
 }
 #contact .contact-items {
     width: 800px;
