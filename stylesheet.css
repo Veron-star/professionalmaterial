@@ -336,7 +336,7 @@ nav {
 #contact-form form {
     display: flex;
     width: 70%;
-    height: 60vh;
+    height: 65vh;
     background-color: #1e1e1e;
     box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
     border: 1px solid rgba(255,255,255,0.01);
@@ -426,7 +426,7 @@ nav {
     font-weight: bold;
     outline: none;
     border: none;
-    margin-top: 40px;
+    margin-top: 0px;
     color: #1b1b1b;
     font-size: 20px;
     text-transform: uppercase;
