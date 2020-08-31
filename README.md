@@ -10,6 +10,6 @@ url: https://veron-star.github.io/professionalmaterial/
 github: https://github.com/Veron-star/professionalmaterial
 
 
-![](/screenshot.PNG)
+![](assests/screenshot.PNG)
 
 
